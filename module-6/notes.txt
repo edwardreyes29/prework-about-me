@@ -1,0 +1,45 @@
+>> Onclick
+
+
+<p id="demo">Click me.</p>
+<script>
+    document.getElementById("demo").onclick = function() {
+        myFunction();
+    }
+
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+    }
+</script>
+
+// On a button
+
+    <button onclick="myFunction()">Click me</button>
+
+    <script>
+        function myFunction() {
+            ...
+        }
+    </script>
+
+// <p> element click event
+
+    <p onclick="myFunction(this, 'red')">Click me to change my text color.</p>
+    <script>
+        function myFunction(elmnt,clr) {
+            elmnt.style.color = clr;
+        }
+        
+    </script>
+
+
+// 
+<button onclick="myFunction()">Click me</button>
+<p id="demo"></p>
+
+
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+    }
+</script>
